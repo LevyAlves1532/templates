@@ -6,17 +6,19 @@ Bem-vindo(a) à pasta de projetos de templates de site! Aqui você encontrará d
 
 A estrutura da pasta está organizada da seguinte maneira:
 
-./
-├── template-design-artist/
-│   ├── index.html
-│   └── assets/
-│       ├── css/
-│       │   └─── styles.css
-│       ├── img/
-│       │   └─── ...
-│       ├── js/
-│       │   └─── app.js
-└── ...
+```bash
+  ./
+  ├── template-design-artist/
+  │   ├── index.html
+  │   └── assets/
+  │       ├── css/
+  │       │   └─── styles.css
+  │       ├── img/
+  │       │   └─── ...
+  │       ├── js/
+  │       │   └─── app.js
+  └── ...
+```
 
 Cada pasta representa um projeto de template de site diferente e contém os seguintes arquivos:
 
