@@ -1081,7 +1081,7 @@ button {
   }
 
   .service
-  .service-grid img:last-child {
+  .service-grid picture:last-child {
     grid-column-start: 1;
     grid-column-end: 3;
   }
