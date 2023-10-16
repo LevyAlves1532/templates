@@ -1,0 +1,1065 @@
+:root {
+  --color-first: #D7F6FF;
+  --color-second: #FFEECC;
+  --color-third: #EFE1FA;
+  --color-fourth: #04547E;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+p, span, a {
+  font-size: 14px;
+  margin: 0;
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+a.Button {
+  width: fit-content;
+  padding: 16px 26px;
+  border-radius: 999px;
+  background-color: var(--color-second);
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+  transition: all ease 0.5s;
+}
+
+a.Button:hover {
+  background-color: var(--color-third);
+}
+
+/* HEADER START */
+header.header {
+  width: 100%;
+  padding: 20px 0;
+  transition: all ease 0.8s;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+header.header.bg-header {
+  background-color: #FFF;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+}
+
+header.header
+.header-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header.header
+.header-logo {
+  max-width: 140px;
+  width: 100%;
+}
+
+header.header
+.header-logo img {
+  width: 100%;
+}
+
+header.header
+.header-nav {
+  flex: 1;
+}
+
+header.header
+.header-nav nav >a {
+  display: none;
+}
+
+header.header
+.header-nav ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header.header
+.header-nav ul li a {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all ease 0.5s;
+}
+
+header.header
+.header-nav ul li a.active-link {
+  color: var(--color-fourth);
+}
+
+header.header
+.header-nav ul li a:hover {
+  color: var(--color-fourth);
+}
+
+header.header
+.header-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+header.header
+.header-buttons button {
+  display: none;
+}
+
+header.header
+.header-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header.header
+.header-buttons a span {
+  font-size: 24px;
+}
+/* HEADER END */
+
+/* BANNER START */
+section.banner {
+  background-color: var(--color-first);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: relative;
+}
+
+section.banner
+.banner-container {
+  min-width: 600px;
+  width: 35%;
+  padding: 40px 20px;
+  
+  position: absolute;
+  left: 5.5%;
+}
+
+section.banner
+.banner-image {
+  width: 60%;
+  margin-bottom: -10px;
+}
+
+section.banner
+.banner-image img {
+  width: 100%;
+}
+
+section.banner
+.banner-title {
+  margin-bottom: 20px;
+}
+
+section.banner
+.banner-title h1 {
+  font-size: 78px;
+  line-height: 88px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section.banner
+.banner-description {
+  margin-bottom: 40px;
+}
+
+section.banner
+.banner-description p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #666;
+}
+/* BANNER END */
+
+/* SERVICES START */
+section.benefits {
+  padding: 80px 0;
+}
+
+section.benefits
+.benefits-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section.benefits
+.benefits-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+section.benefits
+.benefits-card {
+  width: calc(33% - 20px);
+  cursor: pointer;
+  position: relative;
+}
+
+section.benefits
+.benefits-card-image {
+  width: 100%;
+  border-radius: 10px;
+  height: 29vw;
+  max-height: 379px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.benefits
+.benefits-card-image img {
+  width: 100%;
+  height: 100%;
+  transition: all ease 0.5s;
+}
+
+section.benefits
+.benefits-card:hover img {
+  width: 105%;
+  height: 105%;
+}
+
+section.benefits
+.benefits-card-text {
+  transform: translateY(50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+section.benefits
+.benefits-card-text svg {
+  width: 80%;
+  height: auto;
+}
+
+section.benefits
+.benefits-card-text p {
+  margin-top: -10px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+}
+
+section.benefits
+.benefits-body {
+  padding: 40px 20px;
+  margin-top: 105px;
+  background-color: #F9B960;
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  transition: all ease 0.8s;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  position: relative;
+}
+
+section.benefits
+.benefits-body-image {
+  width: 50%;
+}
+
+section.benefits
+.benefits-body-image img {
+  width: 100%;
+}
+
+section.benefits
+.benefits-body-title {
+  margin-bottom: 20px;
+}
+
+section.benefits
+.benefits-body-title h2 {
+  font-size: 44px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #FFF;
+}
+
+section.benefits
+.benefits-body-descripton {
+  margin-bottom: 40px;
+}
+
+section.benefits
+.benefits-body-descripton p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #EEE;
+}
+/* SERVICES END */
+
+/* ABOUT START */
+section.about {
+  background-color: var(--color-first);
+  padding: 20px 0;
+}
+
+section.about
+.about-container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+section.about
+.about-image {
+  width: calc(60% - 10px);
+}
+
+section.about
+.about-image img {
+  width: 100%;
+}
+
+section.about
+.about-details {
+  width: calc(40% - 10px);
+}
+
+section.about
+.about-title {
+  margin-bottom: 20px;
+}
+
+section.about
+.about-title h2 {
+  font-size: 32px;
+  line-height: 42px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section.about
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section.about
+.about-text p {
+  font-size: 16px;
+  line-height: 26px;
+}
+/* ABOUT END */
+
+/* PHASES START */
+section.phases {
+  padding: 80px 0;
+}
+
+section.phases
+.phases-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  gap: 40px;
+}
+
+section.phases
+.phases-details {
+  width: calc(50% - 20px);
+}
+
+section.phases
+.phases-suptitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.phases
+.phases-suptitle h3 {
+  font-size: 38px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section.phases
+.phases-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section.phases
+.phases-title h3 {
+  font-size: 48px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section.phases
+.phases-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+section.phases
+.phases-text p {
+  font-size: 16px;
+  color: #666;
+}
+
+section.phases
+.phases-button {
+  display: flex;
+  justify-content: center;
+}
+
+section.phases
+.phases-list {
+  width: calc(50% - 20px);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.phases
+.phases-list-title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+section.phases
+.phases-list-title {
+  text-align: center;
+}
+
+section.phases
+.phases-list-title h3 {
+  font-size: 38px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section.phases
+.phases-list button {
+  width: calc(50% - 10px);
+  height: 20vw;
+  max-height: 255px;
+  padding: 20px;
+  background-color: #DDD;
+  border-radius: 10px;
+  transition: all ease 0.8s;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+section.phases
+.phases-list button:hover {
+  background-color: var(--color-first);
+}
+
+section.phases
+.phases-list button div {
+  width: 60%;
+  height: 72%;
+  background-color: #FFF;
+  border-radius: 50%;
+  transition: all ease 0.8s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.phases
+.phases-list button.active-phase div {
+  transform: rotate(360deg);
+}
+
+section.phases
+.phases-list button div img {
+  width: 45%;
+}
+
+section.phases
+.phases-list button p {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section.phases
+.phases-list button.active-phase {
+  background-color: var(--color-first);
+}
+/* PHASES END */
+
+/* FOOTER START */
+footer.footer {
+  background-color: var(--color-first);
+  padding-top: 40px;
+}
+
+footer.footer
+.footer-container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+footer.footer
+.footer-item {
+  width: calc(33% - 10px);
+}
+
+footer.footer
+.footer-item img {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+footer.footer
+.footer-item-title {
+  margin-bottom: 20px;
+}
+
+footer.footer
+.footer-item-title h4 {
+  font-size: 46px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer.footer
+.footer-item-body ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer.footer
+.footer-item-body ul li a,
+footer.footer
+.footer-item-body ul li p {
+  width: fit-content;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+footer.footer
+.footer-item-body ul li a span,
+footer.footer
+.footer-item-body ul li p span {
+  font-size: 24px;
+}
+/* FOOTER END */
+
+/* DESKTOP MIN */
+@media only screen and (max-width: 1024px) {
+  /* BANNER START */
+  section.banner
+  .banner-image {
+    margin-top: 120px;
+  }
+  /* BANNER END */
+
+  /* SERVICES START */
+  section.benefits
+  .benefits-cards {
+    flex-wrap: wrap;
+    row-gap: 10vw;
+  }
+
+  section.benefits
+  .benefits-card {
+    width: calc(50% - 20px);
+  }
+
+  section.benefits
+  .benefits-card-image {
+    height: 45vw;
+    max-height: 459px;
+  }
+  /* SERVICES END */
+
+  /* FOOTER START */
+  footer.footer
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer.footer
+  .footer-item {
+    width: calc(50% - 10px);
+  }
+  /* FOOTER END */
+}
+
+/* TABLET */
+@media only screen and (max-width: 768px) {
+  /* HEADER START */
+  header.header.active-header {
+    background-color: #FFF;
+  }
+
+  header.header
+  .header-container {
+    justify-content: space-between;
+  }
+
+  header.header
+  .header-nav {
+    width: 100%;
+    height: calc(100vh - 100%);
+    background-color: #FFF;
+    border-top: 2px solid #CCC;
+    opacity: 0;
+    pointer-events: none;
+    transition: all ease 0.8s;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  header.header.active-header
+  .header-nav {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  header.header
+  .header-nav nav {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  header.header
+  .header-nav nav >a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header.header
+  .header-nav nav >a span {
+    font-size: 24px;
+  }
+
+  header.header
+  .header-nav nav ul {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -20px;
+    transition: all ease 0.8s;
+  }
+
+  header.header.active-header
+  .header-nav nav ul {
+    margin-top: 0;
+  }
+
+  header.header
+  .header-nav nav ul li a {
+    font-size: 24px;
+    padding: 20px 40px;
+    display: block;
+  }
+
+  header.header
+  .header-buttons button {
+    display: block;
+  }
+
+  header.header
+  .header-buttons button div {
+    width: 40px;
+    height: 5px;
+    background-color: #000;
+    transition: all ease 0.8s;
+    margin-bottom: 10px;
+  }
+
+  header.header
+  .header-buttons button div:last-child {
+    margin-bottom: 0;
+  }
+
+  header.header.active-header
+  .header-buttons button div {
+    margin: 0;
+  }
+
+  header.header.active-header
+  .header-buttons button div:nth-of-type(1) {
+    margin-bottom: -5px;
+    transform: rotate(45deg);
+  }
+
+  header.header.active-header
+  .header-buttons button div:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  header.header.active-header
+  .header-buttons button div:nth-of-type(3) {
+    margin-top: -5px;
+    transform: rotate(-45deg);
+  }
+
+  header.header
+  .header-buttons a {
+    display: none;
+  }
+  /* HEADER END */
+
+  /* BANNER START */
+  section.banner {
+    flex-direction: column;
+  }
+
+  section.banner
+  .banner-container {
+    max-width: 600px;
+    width: 100%;
+    min-width: unset;
+    padding: 80px 20px;
+
+    position: relative;
+    left: unset;
+    z-index: 1;
+  }
+
+  section.banner
+  .banner-image {
+    margin-top: -25%;
+
+    align-self: flex-end;
+  }
+  /* BANNER END */
+
+  /* SERVICES START */
+  section.benefits
+  .benefits-cards {
+    flex-wrap: wrap;
+    row-gap: 18vw;
+  }
+
+  section.benefits
+  .benefits-card {
+    width: 100%;
+  }
+
+  section.benefits
+  .benefits-card-image {
+    height: 92vw;
+    max-height: 708px;
+  }
+  /* SERVICES END */
+
+  /* PHASES START */
+  section.phases
+  .phases-container {
+    flex-direction: column;
+  }
+
+  section.phases
+  .phases-details {
+    width: 100%;
+  }
+
+  section.phases
+  .phases-list {
+    width: 100%;
+  }
+
+  section.phases
+  .phases-list button {
+    height: 38vw;
+    max-height: 291px;
+  }
+  /* PHASES END */
+
+  /* FOOTER START */
+  footer.footer
+  .footer-container {
+    flex-direction: column;
+  }
+
+  footer.footer
+  .footer-item {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer.footer
+  .footer-item img {
+    width: 75%;
+    align-self: center;
+  }
+  /* FOOTER END */
+}
+
+/* MOBILE MAX */
+@media only screen and (max-width: 450px) {
+  /* HEADER START */
+  header.header
+  .header-logo {
+    width: 80%;
+  }
+
+  header.header
+  .header-nav nav >a {
+    font-size: 4vw;
+  }
+
+  header.header
+  .header-nav nav >a span {
+    font-size: 5vw;
+  }
+
+  header.header
+  .header-nav nav ul li a {
+    font-size: 5vw;
+  }
+
+  header.header
+  .header-buttons button div {
+    width: 9vw;
+    height: 1vw;
+    margin-bottom: 2vw;
+  }
+
+  header.header.active-header 
+  .header-buttons button div:nth-of-type(1) {
+    margin-bottom: -1vw;
+  }
+
+  header.header.active-header 
+  .header-buttons button div:nth-of-type(3) {
+    margin-top: -1vw;
+  }
+  /* HEADER END */
+
+  /* BANNER START */
+  section.banner
+  .banner-image {
+    width: 90%;
+    margin-top: -50%;
+  }
+
+  section.banner
+  .banner-title h1 {
+    font-size: 17vw;
+    line-height: 19.5vw;
+  }
+
+  section.banner
+  .banner-description p {
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
+
+  section.banner
+  .banner-button a {
+    font-size: 4vw;
+  }
+  /* BANNER END */
+
+  /* SERVICES START */
+  section.benefits
+  .benefits-card-text p {
+    font-size: 4vw;
+  }
+
+  section.benefits
+  .benefits-body {
+    flex-direction: column;
+  }
+
+  section.benefits
+  .benefits-body-image {
+    width: 100%;
+  }
+
+  section.benefits
+  .benefits-body-title h2 {
+    font-size: 10vw;
+  }
+
+  section.benefits
+  .benefits-body-descripton ul li p {
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
+
+  section.benefits
+  .benefits-body-button a {
+    font-size: 4vw;
+  }
+  /* SERVICES END */
+
+  /* ABOUT START */
+  section.about
+  .about-container {
+    flex-direction: column;
+  }
+
+  section.about
+  .about-image {
+    width: 100%;
+  }
+
+  section.about
+  .about-details {
+    width: 100%;
+  }
+
+  section.about
+  .about-title h2 {
+    font-size: 7vw;
+    line-height: 9vw;
+  }
+
+  section.about
+  .about-text p {
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
+  /* ABOUT END */
+
+  /* PHASES START */
+  section.phases
+  .phases-suptitle h3 {
+    font-size: 8vw;
+  }
+
+  section.phases
+  .phases-title h3 {
+    font-size: 11vw;
+  }
+
+  section.phases
+  .phases-text p {
+    font-size: 3.5vw;
+  }
+
+  section.phases
+  .phases-button a {
+    font-size: 4vw;
+  }
+
+  section.phases
+  .phases-list-title h3 {
+    font-size: 8vw;
+  }
+
+  section.phases
+  .phases-list {
+    flex-direction: column;
+  }
+
+  section.phases
+  .phases-list button {
+    width: 100%;
+    height: 75vw;
+    max-height: 319px;
+  }
+
+  section.phases
+  .phases-list button p {
+    font-size: 4vw;
+  }
+  /* PHASES END */
+
+  /* FOOTER START */
+  footer.footer 
+  .footer-item-title h4 {
+    font-size: 10vw;
+  }
+
+  footer.footer 
+  .footer-item-body ul li a,
+  footer.footer 
+  .footer-item-body ul li p {
+    font-size: 4vw;
+  }
+
+  footer.footer 
+  .footer-item-body ul li a span,
+  footer.footer 
+  .footer-item-body ul li p span {
+    font-size: 5vw;
+  }
+  /* FOOTER END */
+}
