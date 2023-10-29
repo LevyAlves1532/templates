@@ -17,6 +17,17 @@ A estrutura da pasta está organizada da seguinte maneira:
   │       │   └─── ...
   │       ├── js/
   │       │   └─── app.js
+  |
+  ├── pet-documents
+  │   ├── index.html
+  │   └── assets/
+  │       ├── css/
+  │       │   └── style.css
+  │       ├── img/
+  │       │   └── ...
+  │       ├── js/
+  │       │   └─── app.js
+  |
   └── ...
 ```
 
