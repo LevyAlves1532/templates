@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.scss","styles.css"],"names":[],"mappings":"AAAA,EAEE,qBAAA,CADA,sCCEF","file":"styles.css","sourcesContent":["* {\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  box-sizing: border-box;\r\n}","* {\n  font-family: Arial, Helvetica, sans-serif;\n  box-sizing: border-box;\n}"]}
